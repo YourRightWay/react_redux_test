@@ -13,7 +13,8 @@ const messages = [
 	}
 ];
 
-
+// Мутация массива. Это концептуально неправильно если ты используешь редакс
+// Как решение - использоваться Object.assign или Object.merge или immutable для более сложных вложенностей
 const messagesReducer = (state = messages, action) => {
 	if( action.type === 'ADD_NEW_MESSAGE' ) {
 		return state.concat({
