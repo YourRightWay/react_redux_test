@@ -14,16 +14,17 @@ window.store = store;
 
 class App extends Component {
   render() {
-  	// console.log(store.getState())
     return (
     	<Provider store={store}>
         {/*
          Было бы лучше разместить здесь не разметку в компонент контейнер
-
+		 Пример:
+		 
          <Container>
          	<Title />
          	<CommentsList />
          </Container>
+         
          */}
 	    	<div className="container">
 	    	<div className="comments-container">

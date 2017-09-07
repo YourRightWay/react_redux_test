@@ -13,7 +13,8 @@ class Comments extends Component {
     // лучше так
     const {messages, globalState, newMessage, checkLogin} = this.props;
 
-    console.log(this.props)
+    // Авторизацию и разлогинивание можно было бы реализовать с помощью local storage
+    // и react router
     return (
       <div>
         <Messages messages={this.props.messages}/>
