@@ -5,6 +5,7 @@ import mainReducer from '../reducers';
 import Comments from './Comments';
 
 const store = createStore(mainReducer)
+// Зачем в обьекте window создается переменная store?
 window.store = store;
 
 class App extends Component {
